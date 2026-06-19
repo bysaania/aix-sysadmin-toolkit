@@ -4,7 +4,7 @@
 # Stop:  Ctrl+C or kill <PID>
 
 INTERVAL=${1:-3}
-OUTFILE="/tmp/ibmsupt/testcase/netstat.out"
+OUTFILE="/tmp/ibmsupt/testcase/netstat.out"   # Path matches IBM's support case directory convention
 
 mkdir -p $(dirname $OUTFILE)
 
