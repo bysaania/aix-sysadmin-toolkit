@@ -1,14 +1,14 @@
 #!/bin/ksh
-# netstat_loop.sh — Continuous network stats collector for AIX support cases
+# netstat_loop.sh - Continuous network stats collector for AIX support cases
 # Usage: ./netstat_loop.sh [interval_seconds]
 # Stop:  Ctrl+C or kill <PID>
 
 INTERVAL=${1:-3}
-OUTFILE="/tmp/ibmsupt/testcase/netstat.out"
+OUTFILE="/tmp/ibmsupt/testcase/netstat.out"  # Path matches IBM's support case directory convention
 
 mkdir -p $(dirname $OUTFILE)
 
-echo "[$0] Started — writing to $OUTFILE every ${INTERVAL}s (PID: $$)"
+echo "[$0] Started writing to $OUTFILE every ${INTERVAL}s (PID: $$)"
 echo "[$0] Stop with: kill $$"
 
 while true; do
