@@ -50,6 +50,7 @@ All scripts are self-documented. Run any script with no arguments to see usage a
 ./network/lacp_tcpdump.sh
 ```
 
+See [`network/README.md`](network/README.md) for full details on each script.
 
 ---
 
